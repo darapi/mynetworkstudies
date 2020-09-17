@@ -1,0 +1,7 @@
+- (vtp) What does a VTP packet capture look like?
+- (vtp) What happens if a VTP server is configured with incorrect VTP domain name?
+- (vtp) What happens if A transparent switch is configured with an incorrect VTP domain name?
+- (vtp) What happens if non-Cisco switch is connected?
+- (vtp) What happens if there is a transparent switch when purning is enabled?
+- (lag) What if LACP or PAgP is not used for aggregation?
+- (stp) What happens if I intentionally create a loop?

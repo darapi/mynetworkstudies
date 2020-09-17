@@ -1,0 +1,48 @@
+! - VLAN
+S1(config)#vlan [ID]
+S1(config-vlan)#name [name]
+
+! - Access port
+S1(config)#interface f[#/#]
+S1(config-if)#switchport mode access
+S1(config-if)#switchport access vlan [ID]
+S1(config-if)#end
+
+! - Portfast
+S1(config)#interface f[#/#]
+S1(config-if)#spanning-tree portfast
+
+! - Show commands
+S1#show vlan-switch
+S1#show interface trunk
+S1#show vtp status
+S1#sh vlan-switch
+S1#show spanning-tree interface f[#/#]
+
+
+###################################################################
+######################### Copy/ Paste #############################
+###################################################################
+
+
+! - VLAN
+vlan [ID]
+  name [name]
+
+! - Access port
+interface f[#/#]
+  switchport mode access
+  switchport access vlan [ID]
+  exit
+
+! - Portfast
+interface range f[#/#] - f[#/#]
+  spanning-tree portfast
+  exit
+
+! - Show commands
+show vlan-switch
+show interface trunk
+show vtp status
+show vlan-switch
+show spanning-tree interface f[#/#]
