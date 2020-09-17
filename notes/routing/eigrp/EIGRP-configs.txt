@@ -1,0 +1,57 @@
+! - Key Chain to use for authentication
+R1(config)#key chain [chain_name]
+R1(config-keychain)#key [id]
+R1(config-keychain-key)#key-string [key]
+R1(config-keychain-key)#exit
+R1(config-keychain)#exit
+
+! - Routing protocol
+R1(config)#router eigrp [ASN]
+R1(config-router)#no auto-summary
+R1(config-router)#network [ip_address] [wildcard]
+R1(config-router)#network [ip_address] [wildcard]
+R1(config-router)#exit
+
+! - Interface authentication
+R1(config-if)#interface Fa[#/#]
+R1(config-if)#ip authentication mode eigrp [ASN] md5
+R1(config-if)#ip authentication key-chain eigrp [ASN] [chain_name]
+R1(config-if)#exit
+
+! - Show commands
+R1#show ip protocol
+R1#show ip eigrp neighbors
+R1#show ip route
+R1#show key chain
+
+
+
+###################################################################
+######################### Copy/ Paste #############################
+###################################################################
+
+
+! - Key Chain to use for authentication
+key chain [chain_name]
+  key [id]
+    key-string [key]
+    exit
+
+! - Routing protocol
+router eigrp [ASN]
+  no auto-summary
+  network [ip_address] [wildcard]
+  network [ip_address] [wildcard]
+  exit
+  
+  ! - Interface authentication
+interface Fa[#/#]
+  ip authentication mode eigrp [ASN] md5
+  ip authentication key-chain eigrp [ASN] [chain_name]
+  exit
+  
+! - Show Commands
+show ip protocol
+show ip eigrp neighbors
+show ip route
+show key chain
