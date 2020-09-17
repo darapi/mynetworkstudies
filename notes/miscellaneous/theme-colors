@@ -1,0 +1,31 @@
+# Posts
+
+Blue: #5ca8dc
+Red: #cd3a34
+Green: #2cb673
+Yellow: #f5ee79
+Orange: #EA4411
+Text (Jet): #131516
+Text (Raven):#373D3F
+
+
+Font Size: 18 px
+Page Width: 700 px
+
+
+---
+https://www.viget.com/articles/naming-colors/
+https://www.viget.com/articles/color-contrast/
+
+---
+
+
+<pre style="background-color:#f9f9f9">
+<code style="font-family: Consolas, monospace;
+font-size: 16px;">
+
+router#show running-config all
+router# show spanning-tree
+
+</code>
+</pre>

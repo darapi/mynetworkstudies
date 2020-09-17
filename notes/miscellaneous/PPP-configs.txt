@@ -1,0 +1,35 @@
+! - PPP Authentication
+R1(config)#username [hostname_of_opposite_router] password [password]
+
+! - PPP Config
+R1(config)#interface serial[#/#]
+R1(config-if)#encapsulation ppp
+R1(config-if)#ppp authentication chap
+R1(config-if)#no shutdown
+R1(config-if)#exit
+
+! - Show commands
+R1#show ip interface brief
+R1#ping [R2_ip_address]
+
+
+
+###################################################################
+######################### Copy/ Paste #############################
+###################################################################
+
+
+! - PPP Authentication
+username [hostname_of_opposite_router] password [password]
+
+! - PPP Config
+interface serial[#/#]
+  encapsulation ppp
+  ppp authentication chap
+  ip address [ip_address] [mask]
+  no shutdown
+  exit
+  
+! - Show commands
+show ip interface brief
+ping [R2_ip_address]

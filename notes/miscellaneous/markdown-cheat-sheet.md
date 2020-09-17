@@ -1,0 +1,2 @@
+- [Emojis-1](https://github.com/StylishThemes/GitHub-Dark/wiki/Emoji)
+- [Emojis-2](https://gist.github.com/rxaviers/7360908)

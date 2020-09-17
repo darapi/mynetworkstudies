@@ -1,0 +1,11 @@
+Layer-2 Connectivity
+- VLAN
+- Trunking
+- VTP
+- STP
+- EtherChannel
+- Extras
+  - STP path selection
+  - STP optional features
+  - L2 optimization
+  - L2 security

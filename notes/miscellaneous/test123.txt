@@ -1,0 +1,24 @@
+Network Direction - VRF Videos
+
+https://www.youtube.com/watch?v=D0IT6ZKY3tg
+https://www.youtube.com/watch?v=7RtoNTK-mgE
+https://www.youtube.com/watch?v=dW8JjcINgDg
+https://www.youtube.com/watch?v=GeIfsVPs4o0
+
+INE - VRF Video
+https://www.youtube.com/watch?v=8EDz8xQM1pA
+
+Kevin Wallace - VRF
+https://www.youtube.com/watch?v=OHW48VW3R1Q
+
+- FabricPath
+- vPC
+- BGP
+- DMVPN
+- FEX
+- VRF
+
+border asa 5505
+L2 PA gonna switch to L3 PA
+Palo Alto VSyS
+Palo Alto zones

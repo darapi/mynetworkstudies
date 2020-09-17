@@ -1,0 +1,29 @@
+! - Loopback
+interface loopback [#]
+  ip address [ip_address] 255.255.255.255
+  no shutdown
+  exit
+
+! - Router main interface
+interface f[#/#]
+  ip address [ip_address] [mask]
+  no shutdown
+  exit
+  
+! - Sub interface
+interface f[#/#.#]
+  encapsulation dot1q [VLAN_ID]
+  ip address [ip_address] [mask]
+  no shutdown
+  exit
+  
+! - SVI interface
+interface vlan [VLAN_ID]
+  ip address [ip_address] [mask]
+  no shutdown
+  exit
+
+! - Show Commands
+show ip interface brief
+show interfac status
+show running-config interface Fa[#/#]

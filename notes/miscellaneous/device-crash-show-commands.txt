@@ -1,0 +1,12 @@
+terminal length 0
+terminal width 100
+show version
+show stacks
+show logging onboard switch active uptime detail
+show inventory
+show platform
+show environment all
+show logging
+show module
+show switch stack-ports summary
+show stack-power detail 

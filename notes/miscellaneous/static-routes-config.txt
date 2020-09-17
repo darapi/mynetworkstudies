@@ -1,0 +1,7 @@
+ip route [destination_address] [mask] [next_hop]
+
+ip route 0.0.0.0 0.0.0.0 S[0/3]
+
+ip route [loopback_address] 255.255.255.255 [next_hop]
+
+ip route 0.0.0.0 0.0.0.0 vlan[#]
