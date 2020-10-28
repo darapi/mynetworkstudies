@@ -15,4 +15,7 @@ show interfaces Gig#/# tranciever detail
 ! - Last time interface was in use:
 show interfaces | include line|Last input
 
+! - Test cable signals
+test cable-diagnostics tdr interface Gig#/#
+
 ```
