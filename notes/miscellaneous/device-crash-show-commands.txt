@@ -1,4 +1,5 @@
 terminal length 0
+show version | include uptime|reload
 terminal width 100
 show version
 show stacks
