@@ -6,7 +6,8 @@ show interface status
 show ip interface brief
 
 
-sh power inline module [#]
+show power inline module [#]
+show power inline [interface]
 
 
 show interfaces Gig#/# tranciever detail
@@ -18,5 +19,9 @@ show interfaces | include line|Last input
 ! - Test cable signals
 test cable-diagnostics tdr interface Gig#/#/#
 show cable-diagnostics tdr interface Gig#/#/#
+
+
+show run | include Chevron
+! to find the pod 
 
 ```
