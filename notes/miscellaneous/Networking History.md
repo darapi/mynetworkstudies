@@ -1,6 +1,0 @@
-- CAM table
-- Hubs and bridges
-- Frame Relay
-- Half duplex
-- Bus Topology
-- Token Ring Topology
