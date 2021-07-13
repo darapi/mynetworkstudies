@@ -1,6 +1,7 @@
+# Verify Upgrade
 
 
-### Show Commands
+## Show Commands
 ```
 show module
 show switch detail
@@ -8,7 +9,7 @@ show version
 ```
 ---
 
-### Examples
+## Examples
 
 #### show module
 
